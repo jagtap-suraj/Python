@@ -1,8 +1,17 @@
+# SE-3, 20, Suraj Jagtap
+
+#Python Experiment No. 06
+
+"""Write a Python program to implement the following.
+a) To read content from one file and write to another file.
+b) Count the number of lines, words and characters in a file.
+c) To display files available in current directory."""
+
 import os
 
 def copy_file():
-    input_file = input("Enter the name of the input file: ")
-    output_file = input("Enter the name of the output file: ")
+    input_file = input("Enter the path of the input file: ")
+    output_file = input("Enter the path of the output file: ")
 
     with open(input_file, 'r') as input_file, open(output_file, 'w') as output_file:
         content = input_file.read();
@@ -11,7 +20,7 @@ def copy_file():
     print("File copied successfully")
 
 def count_file():
-    input_file = input("Enter the name of the input file: ")
+    input_file = input("Enter the path of the input file: ")
 
     with open(input_file, 'r') as input_file:
         line_count = 0;

@@ -1,9 +1,15 @@
+# SE-3, 20, Suraj Jagtap
+
+#Python Experiment No. 07
+
+"""Write a program to build packages and modules for stack data structures."""
+
 from DataStructure.stack import *
 
 def main():
     while True:
         print("\nStack Menu:")
-        print("\t1.Push\n\t2.Pop\n\t3.Peek\n\t4.Display\n\t5.Exit")
+        print("\t1.Push\n\t2.Pop\n\t3.Peek\n\t4.Display\n\t5.Show Size\n\t6.Exit")
         choice = input("Enter the choice: ")
 
         if choice == "1":
@@ -29,11 +35,12 @@ def main():
             else:
                 print("Stack is empty")
         elif choice == "5":
-            print("Exiting...")
+            print("Current Stack Size: ", stackSize())
+        elif choice == "6":
+            print("Program Exited")
             break
+        else:
+            print("Invalid choice. Please enter a valid choice.")
 
 if __name__ == "__main__":
     main()
-                
-
-        

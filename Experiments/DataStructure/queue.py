@@ -12,7 +12,7 @@ def display():
 def queueSize():
     return len(queue)
 
-def enque(element):
+def enqueue(element):
     queue.append(element)
 
 def peek():
@@ -21,8 +21,8 @@ def peek():
     else:
         return -1
 
-def deque():
+def dequeue():
     if isEmpty() == 0:
-        return stack[0]
+        return queue.pop(0)
     else:
         return -1
